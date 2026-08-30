@@ -1,72 +1,228 @@
-# Machine Learning Based Food Demand Forecasting
+# 🍱 Food Demand Forecasting Using Machine Learning
 
-## Credits
+A machine learning project that predicts weekly meal demand using historical order data to support inventory planning, resource allocation, and operational decision-making.
 
-This project was a collaborative effort. Special thanks to Solanki Milan (https://github.com/Miilan13) for their contributions and hard work on this project.
+## 📌 Project Overview
 
-##  Introduction
+Accurately forecasting meal demand can help food delivery and fulfillment operations optimize inventory, reduce food wastage, and prepare for fluctuations in customer demand.
 
-Meal demand in different fulfillment centers is mainly forecasted using machine learning models for optimal management of resources and inventories. Such a forecasting will improve service efficiency in meal delivery and avoid lots of wastage.
+This project develops and compares multiple machine learning regression models to predict weekly meal demand using historical data from fulfillment centers.
 
-The requirement for meals in advance is the best way to reduce waste, increase supply, and optimize the use of systems at play within the fulfillment center, especially during peak order surges. The right estimates enable the fulfillment center to use available resources to the best of their abilities. Good estimates are crucial because, especially in cases where there's a peak in orders, it's essential that this aspect can be well predicted. This project aims to develop a predictive model for weekly meal demand using historical data.
+The project follows the workflow:
 
-## Dataset
-The historical orders dataset contains an amount of meals ordered across various fulfillment centers. Features are:
-- **Center ID**: It is an identifier for the fulfillment center.
-- **Meal ID**: Unique identifier of the meal.
-- **Checkout Price**: Price at which meal has been checked out.
-- **Base Price**: Original price of meal.
-- **Emailer for Promotion**: Whether meal is mailed to them for promotion.
-- **Homepage Featured**: Whether meal was featured on top of the page
-- **Week**: Week of the year.
-- **Year**: Year in which date is input.
-Total Orders This is the total number of orders for the meal in the week. 
+**Data Preprocessing → Feature Engineering → Exploratory Analysis → Model Training → Model Evaluation → Model Comparison**
 
-## Exploratory Data Analysis
-EDA gave insight into the kind of data structure and trends involved. The most important visualizations include:
-Weekly Demand Over Time: This was shown to account for the general pattern for demand.
-Demand by Fulfillment Center: These accounted for which centers were more in demand.
-Demand by Meal Type: This helped to identify which type of meals were in more demand.
 
-## Research Approach
-### Data Preprocessing
-- **Data Cleaning**: Resolved the missing values and outliers in the data.
-- **Feature Engineering**: Generated additional features to improve the accuracy of the model.
-- **Data Transformation**: Normalized numeric features and encoded categorical features.
+## 🎯 Objectives
 
-### Modeling
-Three machine learning algorithms practiced were used to make predictions of demand in meals.
-1.  **Linear Regression**: This is a simple model and used as a benchmark for comparison.
-2.  **Decision Tree Regressor**: Such models will readily capture any non-linear pattern within the data.
-3. **Random Forest Regressor**: An ensemble model where the output averaged from multiple decision trees helps in reducing the variance.
+The main objectives are to:
 
-### Evaluation Metrics
-The evaluation was done using the following metrics:
-- **Mean Squared Error (MSE)**: Average of the squares of errors.
-- **R-squared**: The R-squared value measures the goodness of fit of the model, that is, how well it explains the variance in the data.
-## Results
-We have for comparison:
-- **Linear Regression**: The base. The accuracy is fairly moderate.
-- **Decision Tree Regressor**: Now this is a model that has outperformed the previous ones, because now it will be able to capture some form of nonlinear relationship.
-- **Random Forest Regressor**: Best result so far, more accurate and even less error due to averaging of the ensemble.
-This project exhibits the capability of machine learning models for effective utilization in the task of demand forecasting based on historical data. The best performance was achieved by the Random Forest model, thus making the model suitable for actual applications in meal delivery services' demand forecasting.
+* Analyze historical meal demand
+* Identify important demand patterns
+* Clean and preprocess the dataset
+* Engineer useful predictive features
+* Train multiple regression models
+* Compare model performance
+* Select the best-performing model
+* Explore potential improvements for future forecasting
 
-### Future Improvements
 
-- More Features: Weather, holidays, and regional events may all enhance the prediction results.
-- Hyperparameter Tuning of Models' Parameters: The performance may increase with parameters being hyper-tuned for models.
-- Try Other Models: Accuracy levels would probably be higher if one used Gradient Boosting or Neural Networks.
+## 📂 Dataset
+The project uses historical food order data containing information about fulfillment centers, meals, pricing, promotions, and weekly demand.
 
-## Installing
+### Main Features
 
-Run with the following steps
-1. Clone the repository: `git clone https://github.com/Kruti115/Food_Demand_Forecasting_Using_ML`
-2. Install all packages: `pip install -r requirements.txt
-3. Execute the notebook or script to view the findings and the results.
+| Feature               | Description                                             |
+| --------------------- | ------------------------------------------------------- |
+| Center ID             | Identifier for the fulfillment center                   |
+| Meal ID               | Unique identifier for the meal                          |
+| Checkout Price        | Price at which the meal was sold                        |
+| Base Price            | Original meal price                                     |
+| Emailer for Promotion | Indicates whether the meal was promoted through email   |
+| Homepage Featured     | Indicates whether the meal was featured on the homepage |
+| Week                  | Week of the year                                        |
+| Year                  | Year of the observation                                 |
+| Number of Orders      | Historical weekly meal demand                           |
 
-## References
+Additional information is available through the fulfillment center and meal information datasets.
 
-- Scikit-learn Documentation
-- Pandas Documentation
-- Food Demand Prediction using Statistical and Machine Learning Models
-- Demand Forecasting for Food Production Using Machine Learning Algorithms: A Case Study of University Refectory
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook
+
+
+## 🔄 Project Workflow
+
+### 1. Data Preprocessing
+
+The dataset was prepared for machine learning through:
+
+* Missing-value analysis
+* Data cleaning
+* Outlier analysis
+* Feature transformation
+* Categorical variable encoding
+* Numerical feature processing
+
+
+### 2. Exploratory Data Analysis
+
+EDA was performed to investigate:
+
+* Weekly demand trends
+* Demand across fulfillment centers
+* Meal-level demand
+* Pricing relationships
+* Promotional effects
+* Demand variation over time
+
+
+### 3. Feature Engineering
+
+Additional features were created to improve model performance and capture relationships within the historical data.
+
+The analysis considered factors such as:
+
+* Time-related information
+* Fulfillment center characteristics
+* Meal characteristics
+* Pricing
+* Promotional indicators
+
+
+## 🤖 Machine Learning Models
+
+Three regression algorithms were trained and compared.
+
+### 1. Linear Regression
+
+Used as a baseline model to establish a reference level of predictive performance.
+
+### 2. Decision Tree Regressor
+
+Used to capture nonlinear relationships between the input features and meal demand.
+
+### 3. Random Forest Regressor
+
+An ensemble model combining multiple decision trees to improve predictive stability and reduce variance.
+
+
+## 📏 Evaluation Metrics
+
+The models were evaluated using:
+
+### Mean Squared Error (MSE)
+
+Measures the average squared difference between predicted and actual demand.
+
+### R² Score
+
+Measures how well the model explains the variance in the target variable.
+
+
+## 📊 Model Comparison
+
+The experiments showed that the models performed differently depending on their ability to capture nonlinear relationships in the data.
+
+**Random Forest Regressor achieved the strongest overall performance among the tested models**, outperforming the baseline Linear Regression and Decision Tree approaches in the project experiments.
+
+
+## 💡 Key Findings
+
+* Historical demand contains meaningful patterns that can be used for forecasting.
+* Demand varies across fulfillment centers and meal types.
+* Pricing and promotional information can contribute to demand prediction.
+* Tree-based models can capture nonlinear relationships more effectively than a simple linear baseline.
+* Random Forest provided the best performance among the evaluated models.
+
+
+## 🚀 Potential Improvements
+
+Future versions could improve the forecasting system by incorporating:
+
+* Weather information
+* Public holidays
+* Regional events
+* More advanced time-series features
+* Hyperparameter optimization
+* Gradient Boosting models
+* XGBoost
+* LightGBM
+* Neural-network-based forecasting
+* Model deployment through an API or web application
+
+
+## 📁 Repository Structure
+
+```text
+Food_Demand_Forecasting_Using_ML/
+│
+├── fulfilment_center_info.csv
+├── meal_info.csv
+├── train.csv
+├── test.csv
+├── sample_submission.csv
+├── proj_final.ipynb
+├── LICENSE
+└── README.md
+```
+
+## ▶️ How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Kruti115/Food_Demand_Forecasting_Using_ML.git
+```
+
+Install the required libraries:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+Open:
+
+```text
+proj_final.ipynb
+```
+
+Run the notebook cells sequentially to reproduce the analysis and model training process.
+
+
+## 🎯 Skills Demonstrated
+
+* Machine Learning
+* Regression
+* Data Preprocessing
+* Feature Engineering
+* Exploratory Data Analysis
+* Model Evaluation
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Data Visualization
+
+
+## 👥 Project Credits
+
+This project was developed collaboratively.
+
+Special thanks to **Solanki Milan** for their contributions to the project.
+
+
+## 👩‍💻 Author
+
+**Kruti Gupta**
+
+GitHub: https://github.com/Kruti115
+
+LinkedIn: https://www.linkedin.com/in/kruti-gupta-data/
