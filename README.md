@@ -216,7 +216,7 @@ Run the notebook cells sequentially to reproduce the analysis and model training
 
 This project was developed collaboratively.
 
-Special thanks to **[Solanki Milan](url)** for their contributions to the project.
+Special thanks to **[Solanki Milan](https://github.com/Miilan13)** for their contributions to the project.
 
 
 ## 👩‍💻 Author
