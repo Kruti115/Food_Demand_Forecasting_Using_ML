@@ -26,7 +26,7 @@ The project uses the following datasets:
   - sample_submission.csv – Sample format for the prediction output.
 #### Dataset Size
 | Dataset                       |    Rows | Columns |
-| ----------------------------- | ------: | ------: |
+| ----------------------------- | ------- | ------- |
 | Train                         | 456,548 |       9 |
 | Test                          |  32,573 |       8 |
 | Meal Information              |      51 |       3 |
@@ -101,7 +101,7 @@ Higher R² indicates better performance.
 
 ### Results
 | Model                       |       RMSE |         R² |
-| --------------------------- | ---------: | ---------: |
+| --------------------------- | ---------- | ---------- |
 | Linear Regression           |     331.68 |     0.1789 |
 | Decision Tree Regressor     |     310.82 |     0.2789 |
 | **Random Forest Regressor** | **243.53** | **0.5573** |
@@ -115,9 +115,8 @@ Therefore, Random Forest was selected as the final model.
 ### 🌲 Feature Importance
 
 Feature importance from the final Random Forest model indicates the relative contribution of the input features to prediction.
-``` text
 | Feature                 | Importance |
-| ----------------------- | ---------: |
+| ----------------------- | ---------- |
 | `checkout_price`        |     23.69% |
 | `meal_id`               |     22.74% |
 | `center_id`             |     17.31% |
@@ -125,7 +124,7 @@ Feature importance from the final Random Forest model indicates the relative con
 | `homepage_featured`     |      8.69% |
 | `week`                  |      8.33% |
 | `emailer_for_promotion` |      5.36% |
-``` 
+
 The results indicate that checkout price, meal identity, and fulfilment center were among the most influential features in the final model.
   Feature importance represents the model's learned predictive contribution and should not be interpreted directly as causal relationships.
 
@@ -217,8 +216,9 @@ The model could potentially be improved by incorporating additional information 
   - Advanced time-series forecasting approaches
 
 ### 👩‍💻 Author
-``` text
-Kruti Gupta
+
+**Kruti Gupta**
+
 B.Tech — Artificial Intelligence & Data Science
+
 GitHub: Kruti115
-```
