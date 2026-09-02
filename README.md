@@ -219,6 +219,6 @@ The model could potentially be improved by incorporating additional information 
 
 **Kruti Gupta**
 
-B.Tech — Artificial Intelligence & Data Science
+GitHub: https://github.com/Kruti115
 
-GitHub: Kruti115
+LinkedIn: https://www.linkedin.com/in/kruti-gupta-data/
