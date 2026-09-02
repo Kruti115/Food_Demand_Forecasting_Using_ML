@@ -99,6 +99,9 @@ Lower RMSE indicates better performance.
 R² indicates how much of the variation in the target variable is explained by the model.
 Higher R² indicates better performance.
 
+### Model Comparison
+![Customer Behavior Dashboard]()
+
 ## Results
 | Model                       |       RMSE |         R² |
 | --------------------------- | ---------- | ---------- |
