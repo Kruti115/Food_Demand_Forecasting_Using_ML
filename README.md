@@ -100,7 +100,7 @@ R² indicates how much of the variation in the target variable is explained by t
 Higher R² indicates better performance.
 
 ### Model Comparison
-![Customer Behavior Dashboard]()
+![Actual vs Predicted Demand](Screenshot/Actual vs Predicted Demand.png)
 
 ## Results
 | Model                       |       RMSE |         R² |
