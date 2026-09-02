@@ -142,8 +142,7 @@ food_demand_predictions.csv
 ```
 
 ## 🛠️ Technologies Used
-``` markdown
-``` text  
+``` markdown 
   Python
   Pandas
   NumPy
@@ -156,7 +155,6 @@ food_demand_predictions.csv
 
 ## 📁 Project Structure
 ```markdown
-``` text
 Food_Demand_Forecasting_Using_ML/
 │
 ├── Food_Demand_Forecasting_Using_ML.ipynb
