@@ -79,6 +79,7 @@ Three regression models were developed and compared:
 - **Linear Regression**
 - **Decision Tree Regressor**
 - **Random Forest Regressor**
+
 ### Why Regression?
   The target variable, num_orders, represents the number of orders for a meal at a fulfilment center during a particular week. Since the target is continuous/numerical, regression algorithms are appropriate for the prediction task.
 
