@@ -76,12 +76,9 @@ num_orders
 
 ## 🤖 Machine Learning Models
 Three regression models were developed and compared:
-
-```markdown
-1. **Linear Regression**
-2. **Decision Tree Regressor**
-3. **Random Forest Regressor**
-```
+- **Linear Regression**
+- **Decision Tree Regressor**
+- **Random Forest Regressor**
 ### Why Regression?
   The target variable, num_orders, represents the number of orders for a meal at a fulfilment center during a particular week. Since the target is continuous/numerical, regression algorithms are appropriate for the prediction task.
 
