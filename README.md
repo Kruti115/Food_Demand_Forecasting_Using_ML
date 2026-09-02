@@ -25,11 +25,12 @@ The project uses the following datasets:
   - fulfilment_center_info.csv – Information about fulfilment centers.
   - sample_submission.csv – Sample format for the prediction output.
 #### Dataset Size
-Dataset	Rows	Columns
-Train	456,548	9
-Test	32,573	8
-Meal Information	51	3
-Fulfilment Center Information	77	5
+| Dataset                       |    Rows | Columns |
+| ----------------------------- | ------: | ------: |
+| Train                         | 456,548 |       9 |
+| Test                          |  32,573 |       8 |
+| Meal Information              |      51 |       3 |
+| Fulfilment Center Information |      77 |       5 |
 
 The training data covers weeks 1–145, while the test data represents weeks 146–155.
 
@@ -99,10 +100,12 @@ R² indicates how much of the variation in the target variable is explained by t
 Higher R² indicates better performance.
 
 ### Results
-Model	RMSE	R²
-Linear Regression	331.68	0.1789
-Decision Tree Regressor	310.82	0.2789
-Random Forest Regressor	243.53	0.5573
+| Model                       |       RMSE |         R² |
+| --------------------------- | ---------: | ---------: |
+| Linear Regression           |     331.68 |     0.1789 |
+| Decision Tree Regressor     |     310.82 |     0.2789 |
+| **Random Forest Regressor** | **243.53** | **0.5573** |
+
 #### 🏆 Best Model
 The Random Forest Regressor achieved the best validation performance:
 RMSE: 243.53
@@ -113,14 +116,15 @@ Therefore, Random Forest was selected as the final model.
 
 Feature importance from the final Random Forest model indicates the relative contribution of the input features to prediction.
 ``` text
-Feature	Importance
-checkout_price	23.69%
-meal_id	22.74%
-center_id	17.31%
-base_price	13.88%
-homepage_featured	8.69%
-week	8.33%
-emailer_for_promotion	5.36%
+| Feature                 | Importance |
+| ----------------------- | ---------: |
+| `checkout_price`        |     23.69% |
+| `meal_id`               |     22.74% |
+| `center_id`             |     17.31% |
+| `base_price`            |     13.88% |
+| `homepage_featured`     |      8.69% |
+| `week`                  |      8.33% |
+| `emailer_for_promotion` |      5.36% |
 ``` 
 The results indicate that checkout price, meal identity, and fulfilment center were among the most influential features in the final model.
   Feature importance represents the model's learned predictive contribution and should not be interpreted directly as causal relationships.
@@ -140,6 +144,7 @@ food_demand_predictions.csv
 ```
 
 ### 🛠️ Technologies Used
+``` text  
   Python
   Pandas
   NumPy
@@ -148,6 +153,7 @@ food_demand_predictions.csv
   Seaborn
   Plotly
   Jupyter Notebook
+```
 
 ### 📁 Project Structure
 ``` text
@@ -211,7 +217,8 @@ The model could potentially be improved by incorporating additional information 
   - Advanced time-series forecasting approaches
 
 ### 👩‍💻 Author
-
+``` text
 Kruti Gupta
 B.Tech — Artificial Intelligence & Data Science
 GitHub: Kruti115
+```
