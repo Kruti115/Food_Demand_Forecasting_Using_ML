@@ -99,9 +99,6 @@ Lower RMSE indicates better performance.
 R² indicates how much of the variation in the target variable is explained by the model.
 Higher R² indicates better performance.
 
-### Model Comparison
-![Actual VS Predicted Demand](Screenshot/Actual vs Predicted Demand.png)
-
 ## Results
 | Model                       |       RMSE |         R² |
 | --------------------------- | ---------- | ---------- |
