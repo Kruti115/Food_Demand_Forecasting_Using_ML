@@ -24,7 +24,7 @@ The project uses the following datasets:
   - meal_info.csv – Information about meals, including category and cuisine.
   - fulfilment_center_info.csv – Information about fulfilment centers.
   - sample_submission.csv – Sample format for the prediction output.
-## Dataset Size
+#### Dataset Size
 Dataset	Rows	Columns
 Train	456,548	9
 Test	32,573	8
@@ -91,25 +91,25 @@ This approach better represents the real-world scenario of:
 
 ### 📈 Model Evaluation
 The models were evaluated using:
-# RMSE — Root Mean Squared Error
+#### RMSE — Root Mean Squared Error
 RMSE measures the average magnitude of prediction errors, with larger errors receiving greater importance.
 Lower RMSE indicates better performance.
-# R² — Coefficient of Determination
+#### R² — Coefficient of Determination
 R² indicates how much of the variation in the target variable is explained by the model.
 Higher R² indicates better performance.
 
-# Results
+### Results
 Model	RMSE	R²
 Linear Regression	331.68	0.1789
 Decision Tree Regressor	310.82	0.2789
 Random Forest Regressor	243.53	0.5573
-## 🏆 Best Model
+#### 🏆 Best Model
 The Random Forest Regressor achieved the best validation performance:
 RMSE: 243.53
 R²: 0.5573
 Therefore, Random Forest was selected as the final model.
 
-## 🌲 Feature Importance
+### 🌲 Feature Importance
 
 Feature importance from the final Random Forest model indicates the relative contribution of the input features to prediction.
 ``` text
@@ -125,7 +125,7 @@ emailer_for_promotion	5.36%
 The results indicate that checkout price, meal identity, and fulfilment center were among the most influential features in the final model.
   Feature importance represents the model's learned predictive contribution and should not be interpreted directly as causal relationships.
 
-## 🚀 Final Model & Prediction
+### 🚀 Final Model & Prediction
 After selecting Random Forest as the best-performing model, the final model was retrained using the complete historical training dataset.
 The trained model was then used to predict demand for the test dataset.
 Prediction Output
